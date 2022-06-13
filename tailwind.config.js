@@ -6,6 +6,11 @@ module.exports = {
     fontFamily: {
       signature_font: ["Great Vibes"],
     },
+    width: {
+      max_width: ["1000px"],
+      full_width: ["100%"],
+      socialIcon_width: ["160px"],
+    },
   },
   plugins: [],
 };
