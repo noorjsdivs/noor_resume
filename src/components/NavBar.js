@@ -28,9 +28,11 @@ const NavBar = () => {
   return (
     <div className="bg-gray-900 h-20 w-full top-0 sticky z-10 text-white flex items-center justify-between px-4">
       <div className="cursor-pointer">
-        <h1 className="text-5xl font-signature_font ml-2">
-          Noor <span className="md:hidden lg:inline-block">Mohammad</span>
-        </h1>
+        <a href="https://www.noormohammad.live/" target="_blank">
+          <h1 className="text-5xl font-signature_font ml-2">
+            Noor <span className="md:hidden lg:inline-block">Mohammad</span>
+          </h1>
+        </a>
       </div>
       <ul className="hidden md:inline-flex">
         {links.map(({ id, link }) => (
@@ -50,7 +52,7 @@ const NavBar = () => {
       </div>
 
       {nav && (
-        <ul className="flex flex-col justify-center items-center absolute top-0 w-full_width left-0 h-96 bg-gradient-to-b from-black to-gray-900">
+        <ul className="flex flex-col justify-center items-center absolute top-0 w-full left-0 h-96 bg-gradient-to-b from-black to-gray-900">
           {links.map(({ id, link }) => (
             <li
               key={id}

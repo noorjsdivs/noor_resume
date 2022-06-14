@@ -2,6 +2,7 @@ import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import { AiFillFacebook } from "react-icons/ai";
 
 const SocialLinks = () => {
   const links = [
@@ -13,6 +14,16 @@ const SocialLinks = () => {
         </>
       ),
       href: "https://linkein.com",
+      style: "rounded-tr-md",
+    },
+    {
+      id: 2000,
+      child: (
+        <>
+          Facebook <AiFillFacebook size={32} />
+        </>
+      ),
+      href: "https://facebook.com",
       style: "rounded-tr-md",
     },
     {
@@ -48,7 +59,7 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <div className="hidden lg:flex flex-col top-[46%] left-0 fixed">
+    <div className="hidden lg:flex flex-col top-[43%] left-0 fixed">
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
@@ -61,7 +72,7 @@ const SocialLinks = () => {
           >
             <a
               href={href}
-              className="flex justify-between items-center w-socialIcon_width text-white bg-gray-800 h-14 px-4 hover:rounded-md"
+              className="flex justify-between items-center w-56 text-white bg-gray-800 h-14 px-3 hover:rounded-md"
               download={download}
               target="_blank"
               rel="noreferrer"

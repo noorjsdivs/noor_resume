@@ -55,7 +55,7 @@ const Portfolio = () => {
               <img
                 src={src}
                 alt="amazon"
-                className="rounded-md duration-200 hover:scale-105 h-40 w-full_width"
+                className="rounded-md duration-200 hover:scale-105 h-40 w-full"
               />
               <div className="flex items-center justify-between">
                 <button className="w-1/2 px-6 py-3 m-4 duration-300 hover:scale-105">

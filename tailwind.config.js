@@ -4,13 +4,14 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      signature_font: ["Great Vibes"],
+      signature_font: "Great Vibes",
+      body_font: "Poppins",
     },
-    width: {
-      max_width: ["1000px"],
-      full_width: ["100%"],
-      socialIcon_width: ["160px"],
-    },
+    // width: {
+    //   max_width: "1200px",
+    //   full_width: "100%",
+    //   socialIcon_width: "160px",
+    // },
   },
   plugins: [],
 };

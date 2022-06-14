@@ -11,3 +11,8 @@
     font-family: "Poppins", sans-serif;
   }
 }
+/* @layer components{
+  .profile_img{
+    @apply 
+  }
+} */
