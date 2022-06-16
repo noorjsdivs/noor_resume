@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 const NavBar = () => {
   const [nav, setNav] = useState(false);
@@ -26,9 +27,14 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="bg-gray-900 h-20 w-full top-0 sticky z-10 text-white flex items-center justify-between px-4">
+    <div className="bg-primary_color h-20 w-full top-0 sticky z-10 text-white flex items-center justify-between px-4">
       <div className="cursor-pointer">
-        <a href="https://www.noormohammad.live/" target="_blank">
+        <a
+          href="https://www.noormohammad.live/"
+          target="_blank"
+          without
+          rel="noreferrer"
+        >
           <h1 className="text-5xl font-signature_font ml-2">
             Noor <span className="md:hidden lg:inline-block">Mohammad</span>
           </h1>
@@ -40,7 +46,9 @@ const NavBar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 duration-200 hover:text-white"
           >
-            {link}
+            <Link to={link} smooth={true} duration={500}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
@@ -58,7 +66,14 @@ const NavBar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-2 text-2xl text-gray-500 hover:text-gray-200 duration-200"
             >
-              {link}
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth={true}
+                duration={500}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>

@@ -2,16 +2,17 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary_color: "#0b132b",
+        secondry_color: "#1c2541",
+        extra_color: "#3a506b",
+      },
+    },
     fontFamily: {
       signature_font: "Great Vibes",
       body_font: "Poppins",
     },
-    // width: {
-    //   max_width: "1200px",
-    //   full_width: "100%",
-    //   socialIcon_width: "160px",
-    // },
   },
   plugins: [],
 };

@@ -1,12 +1,14 @@
 import React from "react";
 import heroImg from "../assets/images/Noor.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
 
 const Home = () => {
   return (
     <div
       name="home"
-      className="w-full h-screen bg-gradient-to-b from-black to-gray-600"
+      className="w-full h-screen bg-gradient-to-b from-secondry_color
+       to-gray-600"
     >
       <div className="max-w-7xl mx-auto flex flex-col gap-8 items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full sm:mt-10 md:mt-0">
@@ -21,12 +23,17 @@ const Home = () => {
             valuable viewpoints from others.
           </p>
           <div>
-            <button className="text-white group w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-cyan-500 to-blue-600 cursor-pointer">
+            <Link
+              to="portfolio"
+              smooth={true}
+              duration={500}
+              className="text-white group w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-primary_color to-extra_color cursor-pointer hover:bg-gradient-to-t duration-300 "
+            >
               Portfolio
-              <span className="group-hover:rotate-90 duration-300 ">
+              <span className="group-hover:rotate-90 duration-300">
                 <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
               </span>
-            </button>
+            </Link>
           </div>
         </div>
         <div>
