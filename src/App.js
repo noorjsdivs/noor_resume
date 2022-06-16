@@ -13,13 +13,18 @@ function App() {
   return (
     <div>
       <NavBar />
-      <Home />
-      <SocialLinks />
-      <About />
-      <Portfolio />
-      <Experience />
-      <Contact />
-      <Footer />
+      <div
+        className="bg-gradient-to-b from-secondry_color
+       to-slate-600"
+      >
+        <Home />
+        <SocialLinks />
+        <About />
+        <Portfolio />
+        <Experience />
+        <Contact />
+        <Footer />
+      </div>
     </div>
   );
 }

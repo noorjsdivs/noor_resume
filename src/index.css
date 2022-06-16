@@ -11,3 +11,17 @@
     font-family: "Poppins", sans-serif;
   }
 }
+
+/*============== Favorite Subjcet style start here ==================*/
+@layer utilities {
+  .favSubjectList {
+    @apply w-32 h-10 items-end rounded-sm bg-cyan-200 flex flex-wrap;
+  }
+  .favSubject {
+    @apply font-body_font h-full text-gray-300 w-full flex justify-center gap-2 text-center cursor-pointer duration-500 z-50 bg-gray-800 shadow-sm  items-center;
+  }
+  .favSubjectHover {
+    @apply hover:-translate-y-1 hover:bg-primary_color hover:text-white;
+  }
+}
+/*============== Favorite Subjcet style end here ==================*/
