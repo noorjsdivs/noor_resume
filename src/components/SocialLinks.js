@@ -1,8 +1,9 @@
 import React from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";
+import { GrInstagram } from "react-icons/gr";
+import resume from "../assets/docs/Noor Mohammad.pdf";
 
 const SocialLinks = () => {
   const links = [
@@ -13,7 +14,7 @@ const SocialLinks = () => {
           Linkedin <FaLinkedin size={30} />
         </>
       ),
-      href: "https://linkein.com",
+      href: "https://www.linkedin.com/in/noor-mohammad-ab2245193/",
       style: "rounded-tr-md",
     },
     {
@@ -23,7 +24,7 @@ const SocialLinks = () => {
           Facebook <AiFillFacebook size={32} />
         </>
       ),
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/Noorlalu143",
       style: "rounded-tr-md",
     },
     {
@@ -33,17 +34,17 @@ const SocialLinks = () => {
           GitHub <FaGithub size={30} />
         </>
       ),
-      href: "https://github.com",
+      href: "https://github.com/noorjsdivs",
       style: "rounded-tr-md",
     },
     {
       id: 2003,
       child: (
         <>
-          Mail <HiOutlineMail size={30} />
+          Instagram <GrInstagram size={30} />
         </>
       ),
-      href: "https://linkein.com",
+      href: "https://www.instagram.com/simplenoor143/",
       style: "rounded-tr-md",
       download: true,
     },
@@ -54,7 +55,7 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "/resume.pdf",
+      href: resume,
       style: "rounded-br-md",
     },
   ];

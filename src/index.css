@@ -18,10 +18,13 @@
     @apply w-32 h-10 items-end rounded-sm bg-cyan-200 flex flex-wrap;
   }
   .favSubject {
-    @apply font-body_font h-full text-gray-300 w-full flex justify-center gap-2 text-center cursor-pointer duration-500 z-50 bg-gray-800 shadow-sm  items-center;
+    @apply font-body_font h-full text-gray-300 w-full flex justify-center gap-2 text-center cursor-pointer duration-500  bg-gray-800 shadow-sm  items-center;
   }
   .favSubjectHover {
     @apply hover:-translate-y-1 hover:bg-primary_color hover:text-white;
+  }
+  .imgTextDesign {
+    @apply -mt-60 text-center text-transparent bg-primary_color rounded-md w-full py-4 group-hover:-mt-14 group-hover:text-white duration-500 group-hover:-translate-y-3 group-hover:translate-x-2 hover:-ml-2 hover:rounded-none;
   }
 }
 /*============== Favorite Subjcet style end here ==================*/

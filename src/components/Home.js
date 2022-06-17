@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useRef, useEffect } from "react";
 import heroImg from "../assets/images/Noor_1.jpg";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { ImSpinner9 } from "react-icons/im";
 import { Link } from "react-scroll";
 import { HiCode } from "react-icons/hi";
+import Typed from "typed.js";
 
 const Home = () => {
+  const typeTarget = useRef(null);
+  useEffect(() => {
+    const typed = new Typed(typeTarget.current, {
+      strings: [
+        "Amazon Clone_",
+        "Personal Blogs_",
+        "Twitter Clone_",
+        "Resume Demo_",
+      ],
+      typeSpeed: 120,
+      smartBackspace: true,
+      loop: true,
+    });
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   const frameworks = [
     {
       id: 701,
@@ -89,7 +108,7 @@ const Home = () => {
               <ul className="text-gray-300 hidden mb-3 font-semibold lg:grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4 justify-between w-full  h-auto ">
                 {frameworks.map(({ id, title, href }) => (
                   <div key={id} className="">
-                    <a href={href} target="_blank">
+                    <a href={href} target="_blank" rel="noreferrer">
                       <li className="favSubjectList">
                         <span className=" favSubject favSubjectHover ">
                           <HiCode size={20} />
@@ -99,39 +118,33 @@ const Home = () => {
                     </a>
                   </div>
                 ))}
-                {/* <li className="favSubjectList">
-                  <span className="favSubject favSubjectHover">
-                    <HiCode size={20} />
-                    React
-                  </span>
-                </li>
-                <li className="favSubjectList">
-                  <span className="favSubject favSubjectHover">
-                    <HiCode size={20} />
-                    Next js
-                  </span>
-                </li>
-                <li className="favSubjectList">
-                  <span className=" favSubject favSubjectHover ">
-                    <HiCode size={20} />
-                    HTML-5
-                  </span>
-                </li> */}
               </ul>
             </div>
           </div>
 
-          <div>
+          <div className="flex items-center ">
             <Link
-              to="portfolio"
+              to="projects"
               smooth={true}
               duration={500}
-              className="text-white group w-fit px-6 py-3 my-2 flex items-center rounded-md bg-gradient-to-r from-primary_color to-extra_color cursor-pointer hover:bg-gradient-to-t duration-300 "
+              className="text-white group w-fit px-6 py-3 mt-4 flex items-center rounded-md bg-gradient-to-r from-primary_color to-extra_color cursor-pointer hover:bg-gradient-to-t duration-300 "
             >
-              Portfolio
-              <span className="group-hover:rotate-90 duration-300">
-                <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
+              Projects
+              <span>
+                <ImSpinner9
+                  size={20}
+                  className="ml-2 text text-primary_color animate-spin group-hover:text-cyan-400"
+                />
               </span>
+            </Link>
+            <Link to="projects" smooth={true} duration={500}>
+              <h3 className="text-gray-400  text-sm  ml-6 -mt-6 pt-4 md:text-lg absolute font-semibold hover:border-b-2 ease-in border-cyan-400 duration-500 cursor-pointer">
+                Some of my finished projects inclueds:
+                <span
+                  className="text-sm md:text-2xl  text-gray-200 ml-2 tracking-widest"
+                  ref={typeTarget}
+                ></span>
+              </h3>
             </Link>
           </div>
         </div>
@@ -139,6 +152,7 @@ const Home = () => {
           <a
             href="http://localhost:3000/static/media/Noor_1.b07195c1451c29e845c7.jpg"
             target="_blank"
+            rel="noreferrer"
           >
             <img
               src={heroImg}
