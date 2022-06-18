@@ -87,8 +87,8 @@ const Home = () => {
     },
   ];
   return (
-    <div name="home" className="w-full h-auto py-20 ">
-      <div className="max-w-7xl mx-auto flex flex-col gap-8 items-center justify-center h-full px-4 md:flex-row">
+    <div name="home" className="w-full h-auto  ">
+      <div className="max-w-7xl mx-auto flex flex-col py-20 shadow-md hover:border-b-2 border-primary_color gap-8 items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col  w-5/6  justify-center h-full sm:mt-10 md:mt-0">
           <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white ">
             I am a Full Stack Developer
@@ -138,12 +138,13 @@ const Home = () => {
               </span>
             </Link>
             <Link to="projects" smooth={true} duration={500}>
-              <h3 className="text-gray-400  text-sm  ml-6 -mt-6 pt-4 md:text-lg absolute font-semibold hover:border-b-2 ease-in border-cyan-400 duration-500 cursor-pointer">
+              <h3 className="text-gray-400 group text-sm  ml-6 -mt-6 pt-4 md:text-lg absolute font-semibold  duration-500 cursor-pointer">
                 Some of my finished projects inclueds:
                 <span
                   className="text-sm md:text-2xl  text-gray-200 ml-2 tracking-widest"
                   ref={typeTarget}
                 ></span>
+                <span className="w-1 h-0.5 bg-transparent group-hover:bg-cyan-400 inline-block absolute -bottom-1 left-0 group-hover:w-full duration-700 rounded-md"></span>
               </h3>
             </Link>
           </div>

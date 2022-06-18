@@ -69,7 +69,7 @@ const Projects = () => {
   ];
   return (
     <div name="projects" className=" w-full text-white h-full">
-      <div className="max-w-7xl p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-7xl px-4 py-12 shadow-md mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
           <div className="flex items-center">
             <p className="text-4xl flex font-bold  border-b-4 border-cyan-500">

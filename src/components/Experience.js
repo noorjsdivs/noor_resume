@@ -168,7 +168,7 @@ const Experience = () => {
   ];
   return (
     <div name="experience" className=" w-full text-white h-full py-4">
-      <div className="max-w-7xl  p-4 mx-auto flex flex-col justify-center w-full h-full">
+      <div className="max-w-7xl py-12 px-4 mx-auto flex flex-col border-primary_color border-b-2 justify-center w-full h-full">
         <div>
           <div className="flex items-center">
             <p className="text-4xl flex font-bold  border-b-4 border-cyan-500">

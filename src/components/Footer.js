@@ -71,9 +71,15 @@ const Footer = () => {
         <div className="flex items-center text-gray-500 mt-1 ">
           <p className="mr-2 underline">
             copyrights reserved by_
-            <span className="text-gray-300 font-signature_font ">
-              Noor Mohammad
-            </span>
+            <a
+              href="https://noormohammad.live"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <span className="text-gray-300 font-signature_font ">
+                Noor Mohammad
+              </span>
+            </a>
           </p>
           <BiCopyright />
           <p className="text-sm">2022</p>
