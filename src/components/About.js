@@ -11,7 +11,7 @@ const About = () => {
           </p>
         </div>
 
-        <div className="w-3/4 text-justify mx-auto lg:mx-0">
+        <div className="w-4/5 text-justify mx-auto lg:mx-0">
           <p className="text-xl mt-4">
             There is no better time to start what you love to do or follow. I
             have tried a lot of other platforms to shine but never find my
@@ -38,23 +38,24 @@ const About = () => {
           </ul>
         </div>
         <br />
-        <div className="w-3/4 text-justify mx-auto lg:mx-0">
+        <div className="w-4/5 text-justify mx-auto lg:mx-0">
           <p className="text-xl mt-2">
             Those jobs help me to earn but never fullfill the desire to gain the
-            working satisfaction. I start to learn coding just to explore new
+            working satisfaction. I started to learn coding just to explore new
             possibilites for making an outstanding move. It was hard to learn by
-            myself from the internet search and youtube materials. Before I
-            fully understand the fundamentals of javaScript I think I almost
-            spend 600+ hours of videos watching and other documents reading. In
-            2021 I stared to learn MERN Stack Development course from Creative
-            IT Institute in Bangladesh and got a proper guideline to have a
-            professional touch of coding. Right now I am working with various
-            projects and looking forward to have a proper course on Blockchain
-            when I can make a suitable time for it. I am agog to learn new ideas
-            and technologies and each and everyday searching to find out latest
-            one to fill my hunger about it. I am also available to work with new
-            people or team. So if you are looking someone to help you out or to
-            work for you as a Full stack developer you can contact me.
+            myself from the internet search and youtube materials. To understand
+            the fundamentals of javaScript it took my 600+ hours of videos
+            watching and other documents reading. In 2021 I got a chance to take
+            MERN Stack Development course from Creative IT Institute in
+            Bangladesh and got a proper guideline to have a professional touch
+            of coding. Right now I am working with various projects and looking
+            forward to have a proper course on Blockchain when I can make a
+            suitable time for it. I am agog to learn new ideas and technologies
+            and each and everyday searching to find out latest one to fill my
+            hunger about it. I am also available to work with new people or
+            team. So if you are looking someone to help you out or to work for
+            you as a Full stack developer you can always find me at your
+            service.
           </p>
         </div>
       </div>

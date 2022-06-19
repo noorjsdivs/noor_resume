@@ -96,9 +96,9 @@ const Home = () => {
           <p className="text-gray-400 pt-4 pb-2 text-justify">
             I have 2 years of experience building and designing software.
             Currently, I love to work on web application using technologies like
-            React, Tailwind css, Next JS and GraphQL. It is always exciting to
-            work on new projects by sharing the knowledge I have and getting the
-            valuable viewpoints from others.
+            React, Tailwind css, Next JS, Sanity and many more. It is always
+            exciting to work on new projects by sharing the knowledge I have and
+            getting the valuable viewpoints from others.
           </p>
           <p className="text-gray-400 pt-4 pb-3 text-justify">
             Please check out the most common Framework I am using:
