@@ -151,7 +151,7 @@ const Home = () => {
         </div>
         <div className="bg-cyan-300 rounded-2xl border-none">
           <a
-            href="http://localhost:3000/static/media/Noor_1.b07195c1451c29e845c7.jpg"
+            href="https://noormohmmad.com/static/media/Noor_1.b07195c1451c29e845c7.jpg"
             target="_blank"
             rel="noreferrer"
           >
