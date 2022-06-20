@@ -52,7 +52,7 @@ const Projects = () => {
       id: 3007,
       src: resume_01,
       title: "Resume One",
-      href: "https://unknown2832021.github.io/Sahara_New_Beginning/",
+      href: "https://noorjsdivs.github.io/portfolio/",
     },
     {
       id: 3008,
