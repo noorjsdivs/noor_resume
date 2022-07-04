@@ -4,7 +4,6 @@ import NextImg from "../assets/images/icons/nextjs.png";
 import JsImg from "../assets/images/icons/javascript.png";
 import NodeImg from "../assets/images/icons/node.png";
 import TailwindImg from "../assets/images/icons/tailwind.png";
-import GraphqlImg from "../assets/images/icons/graphql.png";
 import HtmlImg from "../assets/images/icons/html.png";
 import CssImg from "../assets/images/icons/css.png";
 import GithubImg from "../assets/images/icons/github.png";
@@ -97,23 +96,7 @@ const Experience = () => {
       ),
       style: "hover:shadow-sky-400",
     },
-    {
-      id: 4006,
-      src: GraphqlImg,
-      title: "GraphQl",
-      skill_1: "GraphQL API & Schema",
-      skill_2: "Basic Intention",
-      skill_3: "Mutations",
-      skill_4: "Object injections in GraphQL",
-      skill_5: "Database Management Systems",
-      icon: (
-        <BsCodeSlash
-          size={20}
-          className="group-hover:animate-pulse  group-hover:text-pink-400"
-        />
-      ),
-      style: "hover:shadow-pink-400",
-    },
+
     {
       id: 4007,
       src: HtmlImg,

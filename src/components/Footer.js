@@ -5,6 +5,7 @@ import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";
 import { BiCopyright } from "react-icons/bi";
 import { Link } from "react-scroll";
+import logoImg from "../assets/images/logo.png";
 
 const Footer = () => {
   const links = [
@@ -30,12 +31,21 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="w-full h-auto bg-primary_color text-white pt-4">
+    <div className="w-full h-auto bg-primary_color text-white pt-0">
       <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full  items-center  ">
-        <div>
-          <h1 className="text-5xl font-signature_font">
-            Noor <span className="md:hidden lg:inline-block">Mohammad</span>
-          </h1>
+        <div className="cursor-pointer group bg-cyan-400 w-72 h-14 flex">
+          <a
+            href="https://www.noormohammad.live/"
+            target="_blank"
+            without
+            rel="noreferrer"
+          >
+            <img
+              src={logoImg}
+              className="h-14 bg-primary_color w-72 group-hover:bg-gray-800 group-hover:translate-x-1 group-hover:-translate-y-1 duration-500"
+              alt="LogoImg"
+            />
+          </a>
         </div>
         <div className="flex gap-3 my-2">
           <span className="cursor-pointer hover:scale-125 duration-300">

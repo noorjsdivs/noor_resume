@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      borderWidth: {
+        setBorder: "16px",
+      },
       colors: {
         primary_color: "#0b132b",
         secondry_color: "#1c2541",
@@ -10,6 +13,9 @@ module.exports = {
       },
       height: {
         logical: "250px",
+      },
+      width: {
+        imagesWidth: "600px",
       },
     },
     fontFamily: {
