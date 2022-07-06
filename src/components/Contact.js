@@ -11,18 +11,18 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (name === "") {
-      toast.error("Please Enter your Name");
+      toast.error("Please Enter your Name !");
     } else if (email === "") {
-      toast.error("Please Enter your Email");
+      toast.error("Please Enter your Email !!");
     } else if (msg === "") {
-      toast.error("Write me a Message to me");
+      toast.error("Write a Message to me !!!");
     } else {
       axios.post("https://getform.io/f/dfdd3e49-0d98-4c69-91c1-b86bb1095719", {
         name: name,
         email: email,
         message: msg,
       });
-      toast.success("Message sent Successfully!");
+      toast.success("Message sent Successfully !");
       setName("");
       setEmail("");
       setMsg("");
