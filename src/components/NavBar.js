@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { AiOutlineMenuUnfold } from "react-icons/ai";
+import { GiTireIronCross } from "react-icons/gi";
 import { Link } from "react-scroll";
 import logoImg from "../assets/images/logo.png";
 
@@ -58,7 +59,11 @@ const NavBar = () => {
         onClick={() => setNav(!nav)}
         className="cursor-pointer md:hidden pr-4 z-10 text-gray-500 hover:text-white duration-200"
       >
-        {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
+        {nav ? (
+          <GiTireIronCross className="animate-pulse text-white" size={30} />
+        ) : (
+          <AiOutlineMenuUnfold size={35} />
+        )}
       </div>
 
       {nav && (

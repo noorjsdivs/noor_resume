@@ -1,4 +1,5 @@
 import React from "react";
+import resume from "../assets/docs/noor_mohammad.pdf";
 
 const About = () => {
   return (
@@ -16,9 +17,11 @@ const About = () => {
             passion till I find out coding. Coding is what I am loosing the
             count of times.
           </p>
-          <button className="bg-white text-black px-6 py-2 absolute bottom-0 md:bottom-0  lg:bottom-28 text-lg hover:bg-gray-300 duration-200 cursor-pointer">
-            Hire me
-          </button>
+          <a href={resume} rel="noreferrer" target="_blank">
+            <button className="bg-white text-black px-6 py-2 absolute bottom-0 md:bottom-0  lg:bottom-28 text-lg hover:bg-gray-300 duration-200 cursor-pointer">
+              Hire me
+            </button>
+          </a>
         </div>
         <div className=" w-full h-full px-20 sm:px-36 md:px-16 md:ml-8 lg:ml-0 lg:px-0">
           <p className="text-lg text-gray-300 ">

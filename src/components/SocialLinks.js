@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";
 import { GrInstagram } from "react-icons/gr";
-import resume from "../assets/docs/Noor Mohammad.pdf";
+import resume from "../assets/docs/noor_mohammad.pdf";
 
 const SocialLinks = () => {
   const links = [
