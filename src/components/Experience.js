@@ -109,7 +109,7 @@ const Experience = () => {
       icon: (
         <BsCodeSlash
           size={20}
-          className="group-hover:animate-pulse  group-hover:text-orange-400"
+          className="group-hover:animate-pulse  group-hover:text-blue-400"
         />
       ),
       style: "hover:shadow-blue-500",
@@ -126,7 +126,7 @@ const Experience = () => {
       icon: (
         <BsCodeSlash
           size={20}
-          className="group-hover:animate-pulse  group-hover:text-blue-400"
+          className="group-hover:animate-pulse  group-hover:text-orange-400"
         />
       ),
       style: "hover:shadow-orange-500",
