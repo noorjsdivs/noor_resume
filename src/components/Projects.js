@@ -7,16 +7,22 @@ import Gallery from "../assets/images/projects/gallery.png";
 import Slider from "../assets/images/projects/slider.png";
 import resume_01 from "../assets/images/projects/resume_01.png";
 import resume_02 from "../assets/images/projects/resume_02.png";
-import TwitterImg from "../assets/images/projects/twitter.png";
+import Amazon_clone from "../assets/images/projects/amazon.png";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 const Projects = () => {
   const projects = [
     {
-      id: 3002,
+      id: 3001,
       src: blogImg,
       title: "Personal Blog",
       href: "https://www.noormohammad.live/",
+    },
+    {
+      id: 3002,
+      src: Amazon_clone,
+      title: "Amazon clone",
+      href: "https://amazonproone.vercel.app/",
     },
     {
       id: 3003,
@@ -25,22 +31,22 @@ const Projects = () => {
       href: "https://aaoman.vercel.app/",
     },
     {
-      id: 3006,
+      id: 3004,
       src: SaharaImg,
       title: "Sahara Website Demo",
       href: "https://unknown2832021.github.io/Sahara_New_Beginning/",
     },
     {
-      id: 3004,
+      id: 3005,
       src: profileImg,
       title: "Group Work",
       href: "https://noormohammad-profile.netlify.app/",
     },
     {
-      id: 3005,
-      src: Gallery,
-      title: "Image Gallery",
-      href: "https://unknown2832021.github.io/image-viewer/",
+      id: 3006,
+      src: resume_02,
+      title: "Resume Test_Two",
+      href: "https://noorjsdivs.github.io/portfolio-2/",
     },
 
     {
@@ -55,17 +61,12 @@ const Projects = () => {
       title: "Image Slider",
       href: " https://unknown2832021.github.io/slider/",
     },
-    {
-      id: 3001,
-      src: TwitterImg,
-      title: "Twitter Clone",
-      href: "https://www.noormohammad.live/",
-    },
+
     {
       id: 3009,
-      src: resume_02,
-      title: "Resume Test_Two",
-      href: "https://noorjsdivs.github.io/portfolio-2/",
+      src: Gallery,
+      title: "Image Gallery",
+      href: "https://unknown2832021.github.io/image-viewer/",
     },
   ];
   return (
@@ -106,125 +107,6 @@ const Projects = () => {
           ))}
         </div>
       </div>
-      {/* <div className="max-w-7xl mx-auto">
-        <div className="flex-col">
-          <div className="flex lg:col-span-2 px-4 justify-center md:px-6 lg:px-0 lg:w-full lg:h-full gap-6">
-            <div className="w-1/2 h-96 overflow-hidden relative group">
-              <a
-                href="https://www.noormohammad.live/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={blogImg}
-                  className="w-full h-full object-center hover:scale-105 duration-500"
-                  alt=""
-                />
-              </a>
-              <p className="text-center hidden absolute bottom-0 bg-primary_color w-full py-3 group-hover:inline-flex duration-500 justify-center items-center font-body_font text-2xl">
-                My Blog App
-              </p>
-            </div>
-            <div className="w-1/2  h-96 overflow-hidden relative group">
-              <a
-                href="https://aaoman.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={qhseImg}
-                  className="w-full h-full object-center hover:scale-105 duration-500"
-                  alt=""
-                />
-              </a>
-              <p className="text-center hidden absolute bottom-0 bg-primary_color w-full py-3 group-hover:inline-flex duration-500 justify-center items-center font-body_font text-2xl">
-                QHSE Demo Profile
-              </p>
-            </div>
-          </div>
-          <div className="hidden lg:flex gap-6 mt-6">
-            <div className="border-setBorder h-96 w-2/4 border-secondry_color flex-col justify-center items-center">
-              <h1 className="text-4xl font-semibold font-title_font px-14 mt-10">
-                My Latest Projects
-              </h1>
-              <p className="text-lg px-14 mt-5">
-                Besides doing vairous comapines website, I am also developing
-                some of my personal blog, webstore and portfolio webpage and
-                ready to share and help the people who need it best.
-              </p>
-              <button className=" bg-white font-title_font ml-14 mt-8 text-black text-lg px-6 py-2 hover:bg-gray-300 duration-200 cursor-pointer">
-                read more
-              </button>
-            </div>
-            <div className="w-1/2  h-96 overflow-hidden relative group">
-              <a
-                href="https://unknown2832021.github.io/Sahara_New_Beginning/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={SaharaImg}
-                  className="w-full h-full object-center hover:scale-105 duration-500"
-                  alt=""
-                />
-              </a>
-              <p className="text-center hidden absolute bottom-0 bg-primary_color w-full py-3 group-hover:inline-flex duration-500 justify-center items-center font-body_font text-2xl">
-                Sahara Hospitality Demo
-              </p>
-            </div>
-          </div>
-          <div className="flex md:px-6 lg:px-0  mt-6 w-full h-full gap-6">
-            <div className="w-1/3 h-72 overflow-hidden relative group">
-              <a
-                href="https://www.noormohammad.live/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={profileImg}
-                  className="w-full h-full object-center hover:scale-105 duration-500"
-                  alt=""
-                />
-              </a>
-              <p className="text-center hidden absolute bottom-0 bg-primary_color w-full py-3 group-hover:inline-flex duration-500 justify-center items-center font-body_font text-2xl">
-                Profile Dashboard App
-              </p>
-            </div>
-            <div className="w-1/3 h-72 overflow-hidden relative group">
-              <a
-                href="https://www.noormohammad.live/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={Gallery}
-                  className="w-full h-full object-center hover:scale-105 duration-500"
-                  alt=""
-                />
-              </a>
-              <p className="text-center hidden absolute bottom-0 bg-primary_color w-full py-3 group-hover:inline-flex duration-500 justify-center items-center font-body_font text-2xl">
-                Image Gallery
-              </p>
-            </div>
-            <div className="w-1/3  h-72 overflow-hidden relative group">
-              <a
-                href="https://aaoman.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={Slider}
-                  className="w-full h-full object-center hover:scale-105 duration-500"
-                  alt=""
-                />
-              </a>
-              <p className="text-center hidden absolute bottom-0 bg-primary_color w-full py-3 group-hover:inline-flex duration-500 justify-center items-center font-body_font text-2xl">
-                Customize Slider
-              </p>
-            </div>
-          </div>
-        </div>
-      </div> */}
     </div>
   );
 };
