@@ -8,15 +8,23 @@ import Slider from "../assets/images/projects/slider.png";
 import resume_01 from "../assets/images/projects/resume_01.png";
 import resume_02 from "../assets/images/projects/resume_02.png";
 import Amazon_clone from "../assets/images/projects/amazon.png";
+import CyberSecurity from "../assets/images/projects/CyberSecurity.png";
+import ModernPayment from "../assets/images/projects/modernPayment.png";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 const Projects = () => {
   const projects = [
     {
+      id: 3000,
+      src: CyberSecurity,
+      title: "Cyber Security Blog",
+      href: "https://noormohammad.live/",
+    },
+    {
       id: 3001,
       src: blogImg,
       title: "Personal Blog",
-      href: "https://www.noormohammad.live/",
+      href: "https://my-blog-delta-eight.vercel.app/",
     },
     {
       id: 3002,
@@ -29,6 +37,12 @@ const Projects = () => {
       src: qhseImg,
       title: "AA QHSE Demo",
       href: "https://aaoman.vercel.app/",
+    },
+    {
+      id: 4000,
+      src: ModernPayment,
+      title: "Modern Payment Gateway",
+      href: "https://modernpayment.vercel.app/",
     },
     {
       id: 3004,
@@ -97,7 +111,6 @@ const Projects = () => {
                     alt={title}
                     className="rounded-md w-full mx-auto h-logical hover:scale-105 duration-500 cursor-pointer"
                   />
-                  {/* <p className="imgTextDesign font-semibold text-lg">{title}</p> */}
                   <p className="text-center hidden absolute bottom-0 bg-primary_color w-full py-2 group-hover:inline-flex duration-500 justify-center items-center font-body_font text-2xl">
                     {title}
                   </p>
