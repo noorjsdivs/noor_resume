@@ -93,7 +93,7 @@ const Home = () => {
           <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white ">
             I am a Full Stack Developer
           </h2>
-          <p className="text-gray-400 pt-4 pb-2 text-justify">
+          <p className="text-gray-400 hover:text-gray-50 duration-200 pt-4 pb-2 text-justify">
             I have 2 years of experience building and designing software.
             Currently, I love to work on web application using technologies like
             React, Tailwind css, Next JS, Sanity and many more. It is always
@@ -158,7 +158,7 @@ const Home = () => {
             <img
               src={heroImg}
               alt="Profile_pic"
-              className="rounded-2xl mx-auto w-full md:w-full hover:-translate-y-2 hover:-translate-x-2 duration-500"
+              className="rounded-2xl mx-auto w-full md:w-full hover:-translate-y-2 hover:-translate-x-2 duration-500 brightness-75 hover:brightness-100"
             />
           </a>
         </div>

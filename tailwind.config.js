@@ -12,7 +12,7 @@ module.exports = {
         extra_color: "#3a506b",
       },
       height: {
-        logical: "250px",
+        logical: "230px",
       },
       width: {
         imagesWidth: "600px",
