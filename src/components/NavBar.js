@@ -29,7 +29,7 @@ const NavBar = () => {
     },
   ];
   return (
-    <div className="bg-primary_color  h-24 w-full top-0 sticky z-10 text-white flex items-center justify-between px-4">
+    <div className="bg-primary_color h-24 w-full top-0 sticky z-10 text-white flex items-center justify-between px-4">
       <div className="cursor-pointer group bg-cyan-400 w-72 h-14 flex">
         <a
           href="https://www.noormohammad.live/"
