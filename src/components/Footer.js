@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
@@ -32,7 +33,13 @@ const Footer = () => {
   ];
   return (
     <div className="w-full h-auto bg-primary_color text-white pt-0">
-      <div className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full  items-center  ">
+      <motion.div
+        initial={{ y: 100, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 1.2 }}
+        className="flex flex-col p-4 justify-center max-w-screen-lg mx-auto h-full  items-center  "
+      >
         <div className="cursor-pointer group bg-cyan-400 w-72 h-14 flex">
           <a
             href="https://www.noormohammad.live/"
@@ -94,7 +101,7 @@ const Footer = () => {
           <BiCopyright />
           <p className="text-sm">2022</p>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

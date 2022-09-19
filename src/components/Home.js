@@ -1,4 +1,5 @@
 import React, { useRef, useEffect } from "react";
+import { motion } from "framer-motion";
 import heroImg from "../assets/images/Noor_1.jpg";
 import { ImSpinner9 } from "react-icons/im";
 import { Link } from "react-scroll";
@@ -87,13 +88,19 @@ const Home = () => {
     },
   ];
   return (
-    <div name="home" className="w-full h-auto  ">
-      <div className="max-w-7xl mx-auto flex flex-col py-20 shadow-md hover:border-b-2 border-primary_color gap-8 items-center justify-center h-full px-4 md:flex-row">
-        <div className="flex flex-col  w-5/6  justify-center h-full sm:mt-10 md:mt-0">
+    <div name="home" className="w-full h-auto ">
+      <div className="max-w-7xl mx-auto flex flex-col py-20 h-screen shadow-md hover:border-b-2 border-primary_color gap-8 items-center justify-center px-4 md:flex-row relative">
+        <motion.div
+          initial={{ x: -200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2 }}
+          className="flex flex-col  w-5/6  justify-center h-full sm:mt-10 md:mt-0"
+        >
           <h2 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-white ">
             I am a Full Stack Developer
           </h2>
-          <p className="text-gray-400 hover:text-gray-50 duration-200 pt-4 pb-2 text-justify">
+          <p className="text-gray-400 text-[16px] hover:text-gray-50 duration-200 pt-4 pb-2 text-justify">
             I have 2 years of experience building and designing software.
             Currently, I love to work on web application using technologies like
             React, Tailwind css, Next JS, Sanity and many more. It is always
@@ -104,7 +111,7 @@ const Home = () => {
             Please check out the most common Framework I am using:
           </p>
           <div>
-            <div className="flex">
+            <motion.div className="flex">
               <ul className="text-gray-300 hidden mb-3 font-semibold lg:grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4 justify-between w-full  h-auto ">
                 {frameworks.map(({ id, title, href }) => (
                   <div key={id} className="">
@@ -119,10 +126,10 @@ const Home = () => {
                   </div>
                 ))}
               </ul>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="flex items-center ">
+          <div className="flex items-center">
             <Link
               to="projects"
               smooth={true}
@@ -148,8 +155,14 @@ const Home = () => {
               </h3>
             </Link>
           </div>
-        </div>
-        <div className="bg-cyan-300 rounded-2xl border-none">
+        </motion.div>
+        <motion.div
+          initial={{ x: 200, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1.2 }}
+          className="bg-cyan-300 rounded-2xl border-none"
+        >
           <a
             href="https://noormohmmad.com/static/media/Noor_1.b07195c1451c29e845c7.jpg"
             target="_blank"
@@ -161,7 +174,7 @@ const Home = () => {
               className="rounded-2xl mx-auto w-full md:w-full hover:-translate-y-2 hover:-translate-x-2 duration-500 brightness-75 hover:brightness-100"
             />
           </a>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { GiTireIronCross } from "react-icons/gi";
 import { Link } from "react-scroll";
@@ -30,7 +31,12 @@ const NavBar = () => {
   ];
   return (
     <div className="bg-primary_color h-24 w-full top-0 sticky z-10 text-white flex items-center justify-between px-4">
-      <div className="cursor-pointer group bg-cyan-400 w-72 h-14 flex">
+      <motion.div
+        initial={{ x: -500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5 }}
+        className="cursor-pointer group bg-cyan-400 w-72 h-14 flex"
+      >
         <a
           href="https://www.noormohammad.live/"
           target="_blank"
@@ -43,19 +49,28 @@ const NavBar = () => {
             alt="logo"
           />
         </a>
-      </div>
-      <ul className="hidden md:inline-flex gap-6">
-        {links.map(({ id, link }) => (
-          <div key={id} className="w-full h-auto bg-cyan-400  ">
-            <li className="px-4 py-1 bg-primary_color hover:bg-gray-900 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white hover:translate-x-1 hover:-translate-y-1 duration-300">
-              <Link to={link} smooth={true} duration={500}>
-                {link}
-              </Link>
-            </li>
-          </div>
-        ))}
-      </ul>
-      <div
+      </motion.div>
+      <motion.div
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5 }}
+      >
+        <ul className="hidden md:inline-flex gap-6">
+          {links.map(({ id, link }) => (
+            <div key={id} className="w-full h-auto bg-cyan-400  ">
+              <li className="px-4 py-1 bg-primary_color hover:bg-gray-900 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white hover:translate-x-1 hover:-translate-y-1 duration-300">
+                <Link to={link} smooth={true} duration={500}>
+                  {link}
+                </Link>
+              </li>
+            </div>
+          ))}
+        </ul>
+      </motion.div>
+      <motion.div
+        initial={{ x: 500, opacity: 0, scale: 0.5 }}
+        animate={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 1 }}
         onClick={() => setNav(!nav)}
         className="cursor-pointer md:hidden pr-4 z-10 text-gray-500 hover:text-white duration-200"
       >
@@ -64,7 +79,7 @@ const NavBar = () => {
         ) : (
           <AiOutlineMenuUnfold size={35} />
         )}
-      </div>
+      </motion.div>
 
       {nav && (
         <ul className="flex flex-col justify-center items-center absolute top-0 w-full left-0 h-96 bg-gradient-to-b from-black to-gray-900">

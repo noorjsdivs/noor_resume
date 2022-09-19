@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import { AiOutlineSend } from "react-icons/ai";
 import { ToastContainer, toast } from "react-toastify";
@@ -51,7 +52,11 @@ const Contact = () => {
             method="POST"
             className="flex flex-col w-full md:w-1/2"
           >
-            <input
+            <motion.input
+              initial={{ x: -200, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2 }}
               type="text"
               name="name"
               onChange={(e) => setName(e.target.value)}
@@ -59,7 +64,11 @@ const Contact = () => {
               placeholder="Enter your name"
               className="p-2 bg-transparent border-2 shadow-md shadow-primary_color focus:shadow-none hover:shadow-none border-cyan-700 focus:border-cyan-500 rounded-md text-white focus:outline-none"
             />
-            <input
+            <motion.input
+              initial={{ x: 200, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2 }}
               type="email"
               name="email"
               onChange={(e) => setEmail(e.target.value)}
@@ -67,16 +76,24 @@ const Contact = () => {
               placeholder="Enter your email"
               className="p-2 my-4 bg-transparent border-2 shadow-md shadow-primary_color focus:shadow-none hover:shadow-none border-cyan-700 focus:border-cyan-500 rounded-md text-white focus:outline-none"
             />
-            <textarea
+            <motion.textarea
+              initial={{ x: -200, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2 }}
               name="message"
               placeholder="Enter your messages"
               onChange={(e) => setMsg(e.target.value)}
               value={msg}
               rows="10"
               className="p-2 bg-transparent border-2 shadow-md shadow-primary_color focus:shadow-none hover:shadow-none border-cyan-700 focus:border-cyan-500 rounded-md text-white focus:outline-none"
-            ></textarea>
+            ></motion.textarea>
 
-            <button
+            <motion.button
+              initial={{ y: 100, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 1.2 }}
               onClick={handleSubmit}
               type="submit"
               className="text-white group w-full px-6 py-3 mt-4 flex items-center justify-center rounded-md bg-gradient-to-r from-primary_color to-extra_color cursor-pointer hover:bg-gradient-to-t duration-300 "
@@ -86,7 +103,7 @@ const Contact = () => {
                 className="ml-2 animate-pulse group-hover:text-cyan-300"
                 size={20}
               />
-            </button>
+            </motion.button>
             <span></span>
           </form>
         </div>

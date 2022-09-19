@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { AiFillFacebook } from "react-icons/ai";
@@ -60,7 +61,12 @@ const SocialLinks = () => {
     },
   ];
   return (
-    <div className="hidden lg:flex flex-col top-[35%] left-0 fixed z-50">
+    <motion.div
+      initial={{ y: -500, opacity: 0, scale: 0.5 }}
+      animate={{ y: 0, opacity: 1, scale: 1 }}
+      transition={{ duration: 1.5 }}
+      className="hidden lg:flex flex-col top-[35%] left-0 fixed z-50"
+    >
       <ul>
         {links.map(({ id, child, href, style, download }) => (
           <li
@@ -83,7 +89,7 @@ const SocialLinks = () => {
           </li>
         ))}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

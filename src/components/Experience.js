@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import ReactImg from "../assets/images/icons/react.png";
 import NextImg from "../assets/images/icons/nextjs.png";
 import JsImg from "../assets/images/icons/javascript.png";
@@ -163,7 +164,7 @@ const Experience = () => {
           </div>
           <p className="py-6">These are the technologies I have worked with</p>
         </div>
-        <div className="w-full px-24 lg:px-0 md:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center py-8  sm:px-0">
+        <motion.div className="w-full px-24 lg:px-0 md:px-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center py-8  sm:px-0">
           {techs.map(
             ({
               id,
@@ -211,7 +212,7 @@ const Experience = () => {
               </div>
             )
           )}
-        </div>
+        </motion.div>
       </div>
     </div>
   );

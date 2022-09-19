@@ -6,14 +6,12 @@ import Experience from "./components/Experience";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-// import Pagination from "./components/Pagination";
 import Projects from "./components/Projects";
 import SocialLinks from "./components/SocialLinks";
-// import { projects } from "./constants.js";
 
 function App() {
   return (
-    <div>
+    <div className="overflow-hidden">
       <NavBar />
       <div
         className="bg-gradient-to-b from-secondry_color
@@ -21,8 +19,11 @@ function App() {
       >
         <div className="max-w-screen-xl mx-auto">
           <Home />
+
           <SocialLinks />
+
           <About />
+
           <Projects />
           {/* <Pagination  /> */}
           <Experience />
